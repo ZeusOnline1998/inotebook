@@ -1,6 +1,6 @@
 {
     "info": {
-        "_postman_id": "2daedd0c-1128-4659-9de3-e7b95c7a67c7",
+        "_postman_id": "50676928-9dc9-48c2-a0fe-45df86b8d8d9",
         "name": "iNotebook",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": ""
@@ -14,7 +14,7 @@
                     "request": {
                         "method": "POST",
                         "url": {
-                            "raw": "localhost:3000/api/auth/createuser",
+                            "raw": "localhost:3001/api/auth/createuser",
                             "path": [
                                 "api",
                                 "auth",
@@ -23,7 +23,7 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
@@ -47,7 +47,7 @@
                     "request": {
                         "method": "POST",
                         "url": {
-                            "raw": "localhost:3000/api/auth/login",
+                            "raw": "localhost:3001/api/auth/login",
                             "path": [
                                 "api",
                                 "auth",
@@ -56,7 +56,7 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
@@ -80,7 +80,7 @@
                     "request": {
                         "method": "GET",
                         "url": {
-                            "raw": "localhost:3000/api/auth/getuser",
+                            "raw": "localhost:3001/api/auth/getuser",
                             "path": [
                                 "api",
                                 "auth",
@@ -89,7 +89,7 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
@@ -97,12 +97,8 @@
                                 "value": "application/json"
                             },
                             {
-                                "key": "Content-Type",
-                                "value": "application/json"
-                            },
-                            {
                                 "key": "auth-token",
-                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjY3NzkzOX0.Y6I13WnDCSkgT6Sw-A4s-QafYcmdx3iMOQ5PUySJ2-Q"
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjcwMjMwNn0.IC1CbTMHgmFc46MHyzwwX8Tgi7TJ4fbmBmwu0ufHjNY"
                             }
                         ]
                     }
@@ -117,7 +113,7 @@
                     "request": {
                         "method": "GET",
                         "url": {
-                            "raw": "localhost:3000/api/notes/fetchallnotes",
+                            "raw": "localhost:3001/api/notes/fetchallnotes",
                             "path": [
                                 "api",
                                 "notes",
@@ -126,16 +122,16 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
-                                "key": "auth-token",
-                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjY3NzkzOX0.Y6I13WnDCSkgT6Sw-A4s-QafYcmdx3iMOQ5PUySJ2-Q"
-                            },
-                            {
                                 "key": "Content-Type",
                                 "value": "application/json"
+                            },
+                            {
+                                "key": "auth-token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjcwMjMwNn0.IC1CbTMHgmFc46MHyzwwX8Tgi7TJ4fbmBmwu0ufHjNY"
                             }
                         ]
                     }
@@ -145,7 +141,7 @@
                     "request": {
                         "method": "POST",
                         "url": {
-                            "raw": "localhost:3000/api/notes/addnote/",
+                            "raw": "localhost:3001/api/notes/addnote/",
                             "path": [
                                 "api",
                                 "notes",
@@ -154,16 +150,16 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
-                                "key": "auth-token",
-                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjY3NzkzOX0.Y6I13WnDCSkgT6Sw-A4s-QafYcmdx3iMOQ5PUySJ2-Q"
-                            },
-                            {
                                 "key": "Content-Type",
                                 "value": "application/json"
+                            },
+                            {
+                                "key": "auth-token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjcwMjMwNn0.IC1CbTMHgmFc46MHyzwwX8Tgi7TJ4fbmBmwu0ufHjNY"
                             }
                         ],
                         "body": {
@@ -173,7 +169,7 @@
                                     "language": "json"
                                 }
                             },
-                            "raw": "{\n  \"title\": \"My Title 2\",\n  \"description\": \"Description 2\",\n  \"tag\": \"personal\"\n}"
+                            "raw": "{\n  \"title\": \"My Title 3\",\n  \"description\": \"Description 3\",\n  \"tag\": \"personal\"\n}"
                         }
                     }
                 },
@@ -182,26 +178,26 @@
                     "request": {
                         "method": "PUT",
                         "url": {
-                            "raw": "localhost:3000/api/notes/updatenote/64e43b88660b3dacb13c8405",
+                            "raw": "localhost:3001/api/notes/updatenote/64e496d59d7689009f81cfc0",
                             "path": [
                                 "api",
                                 "notes",
                                 "updatenote",
-                                "64e43b88660b3dacb13c8405"
+                                "64e496d59d7689009f81cfc0"
                             ],
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
-                                "key": "auth-token",
-                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjY3NzkzOX0.Y6I13WnDCSkgT6Sw-A4s-QafYcmdx3iMOQ5PUySJ2-Q"
-                            },
-                            {
                                 "key": "Content-Type",
                                 "value": "application/json"
+                            },
+                            {
+                                "key": "auth-token",
+                                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjcwMjMwNn0.IC1CbTMHgmFc46MHyzwwX8Tgi7TJ4fbmBmwu0ufHjNY"
                             }
                         ],
                         "body": {
@@ -211,7 +207,7 @@
                                     "language": "json"
                                 }
                             },
-                            "raw": "{\n  \"title\": \"My Title 2\",\n  \"description\": \"Description 2 Updated\",\n  \"tag\": \"personal\"\n}"
+                            "raw": "{\n  \"title\": \"My Title 3\",\n  \"description\": \"Description 3 Updated\",\n  \"tag\": \"personal\"\n}"
                         }
                     }
                 },
@@ -220,7 +216,7 @@
                     "request": {
                         "method": "PUT",
                         "url": {
-                            "raw": "localhost:3000/api/notes/deletenote/64e448f9e07f1bc2a7edc2a7",
+                            "raw": "localhost:3001/api/notes/deletenote/64e448f9e07f1bc2a7edc2a7",
                             "path": [
                                 "api",
                                 "notes",
@@ -230,7 +226,7 @@
                             "host": [
                                 "localhost"
                             ],
-                            "port": "3000"
+                            "port": "3001"
                         },
                         "header": [
                             {
