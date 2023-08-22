@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import NoteState from './context/notes/NoteState'
+import './App.css'
+import Alert from './components/Alert';
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
       <NoteState>
         <BrowserRouter>
           <Navbar />
+          <Alert message="Dummy Message for alert" />
           <div className="container">
             <Routes>
               <Route path='/' element={<Home />}></Route>
@@ -19,6 +22,7 @@ function App() {
           </div>
         </BrowserRouter>
       </NoteState>
+      
     </>
   )
 }
