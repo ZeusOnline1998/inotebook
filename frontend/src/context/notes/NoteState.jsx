@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const NoteState = (props) => {
     const host = "http://localhost:3001"
     const notesInitial = []
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRlMzUyYWFkNzViMGFiMTVhMDI0MDM5In0sImlhdCI6MTY5MjcwMjMwNn0.IC1CbTMHgmFc46MHyzwwX8Tgi7TJ4fbmBmwu0ufHjNY'
+    const token = localStorage.getItem('token')
 
     const [notes, setNotes] = useState(notesInitial);
 

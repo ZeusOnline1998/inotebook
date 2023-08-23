@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const Signup = () => {
+const Signup = (props) => {
 
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });
     let navigate = useNavigate();
@@ -20,14 +22,17 @@ const Signup = () => {
         if (json.error) {
             // alert(json.error)
             console.log(json)
+            props.showAlert("Invalid Details", "danger")
         }
         else if(json.errors){
             console.log(json)
+            props.showAlert("Invalid Details", "danger")
             // json.errors.map((error) => alert(error))
         }
         else {
             localStorage.setItem('token', json.authToken);
             console.log(json)
+            props.showAlert("Account created succesfully", "success")
             navigate("/");
         }
     }

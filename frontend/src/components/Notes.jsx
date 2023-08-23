@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import noteContext from '../context/notes/noteContext';
 import Noteitem from './Noteitem';
+import AddNote from './AddNote';
 
-const Notes = () => {
+const Notes = (props) => {
     const context = useContext(noteContext);
     const { notes, getNotes, editNote} = context;
     const ref = useRef(null)
@@ -23,6 +24,7 @@ const Notes = () => {
         // console.log(note)
         editNote(note.id , note.etitle, note.edescription, note.etag);
         refClose.current.click();
+        props.showAlert("Updated successfully", "success")
     }
 
     const handleOnChange = (e) => {
@@ -68,9 +70,12 @@ const Notes = () => {
             </div>
             <div className="row my-3">
                 <h2>Your Notes</h2>
+                <div className="container">
+                    {notes.length === 0 && 'You do not have any notes. Add notes from above'}
+                </div>
                 {
                     notes.map((note) => {
-                        return <Noteitem key={note._id} updateNote={updateNote} note={note} />
+                        return <Noteitem key={note._id} updateNote={updateNote} note={note} showAlert={props.showAlert} />
                     })
                 }
             </div>
