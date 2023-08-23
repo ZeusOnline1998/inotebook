@@ -13,7 +13,7 @@ const Login = () => {
             headers: {
                 'Content-type': 'application/json',
             },
-            body: JSON.stringify({email: credentials.email, password: credentials.password})
+            body: JSON.stringify(credentials)
         });
         const json = await response.json();
         if(json.error){
