@@ -81,9 +81,9 @@ const NoteState = (props) => {
                 "auth-token": token
             },
         });
-        const json = await response.json();
-        console.log(json);
-        console.log(`Deleting note with id: ${id}`)
+        // const json = await response.json();
+        // console.log(json);
+        // console.log(`Deleting note with id: ${id}`)
         // const newNotes = notes.filter((note) => note._id !== id)
         // setNotes(newNotes)
         getNotes();
