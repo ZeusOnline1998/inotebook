@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 const NoteState = (props) => {
-    const host = "http://localhost:3001"
+    const host = import.meta.env.VITE_SERVER_URL
     const notesInitial = []
     const token = localStorage.getItem('token')
 
